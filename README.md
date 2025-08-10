@@ -2,6 +2,10 @@
 
 * [Presentation](#presentation "Presentation")
 * [Dependencies](#dependencies "Dependencies")
+* [Usage](#usage "Usage")
+* [Options](#options "Options")
+* [Getting a webhook URL](#getting-a-webhook-url "Getting a webhook URL")
+* [Limitations](#limitations "Limitations")
 * [Acknowledgements](#acknowledgements "Acknowledgements")
 
 ## Presentation
@@ -25,11 +29,55 @@ Works with (group) conversations or channels.
 
 ## Options
 
-TO COMPLETE
+[![Notification content](./static/notification_content.png#center "Notification content")](./static/notification_content.png)
+
+1. `--title`
+2. `--username`
+3. `--avatar`
+4. `--description`
+5. `--style`
+6. `--field`
+7. `--link`
+
+⚠️ **None of those parameters are required** ⚠️
+
+### `--title STRING`
+
+Set a title to the notification
+
+### `--username STRING`
+
+Set an author to the notification
+
+### `--avatar URL`
+
+Set a custom avatar for the notification author
+
+### `--description STRING`
+
+Add a text description to the notification
+
+### `--style (emphasis/accent/good/attention/warning)`
+
+Set the style of the notification card.
+
+Inherited from the [Container.style](https://adaptivecards.io/explorer/Container.html "Microsoft") property.
+
+### `--field STRING;STRING`
+
+Add a field `NAME: Value` to the notification.
+
+This option can be provided O to n times to add n fields.
+
+### `--link STRING;URL`
+
+Add a link in the form of a clickable button to the notification.
+
+This option can be provided O to n times to add n links.
 
 ## Getting a webhook URL
 
-The goal is to create a Workflow on PowerAutomate that is going to publish messages on Teams, in the form of an [Adaptive Card](https://adaptivecards.io/ "Microsoft"), using a webhook as a trigger.
+The goal here is to create a Workflow on PowerAutomate that is going to publish messages on Teams, in the form of an [Adaptive Card](https://adaptivecards.io/ "Microsoft"), using a webhook as a trigger.
 
 The official [Microsoft Support documentation](https://support.microsoft.com/en-us/office/create-incoming-webhooks-with-workflows-for-microsoft-teams-8ae491c7-0394-4861-ba59-055e33f75498 "Microsoft") works but can be quite cumbersome.
 
