@@ -8,6 +8,8 @@
 
 A pure bash script sending Microsoft Teams notifications through Workflows' webhooks.
 
+[![Notification example](./static/notification_example.png#center "Notification example")](./static/notification_example.png)
+
 Works with (group) conversations or channels.
 
 ## Dependencies
