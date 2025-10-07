@@ -4,6 +4,7 @@
 * [Dependencies](#dependencies "Dependencies")
 * [Usage](#usage "Usage")
 * [Options](#options "Options")
+* [Docker](#docker "Docker")
 * [Getting a webhook URL](#getting-a-webhook-url "Getting a webhook URL")
 * [Limitations](#limitations "Limitations")
 * [Acknowledgements](#acknowledgements "Acknowledgements")
@@ -74,6 +75,14 @@ This option can be provided O to n times to add n fields.
 Add a link in the form of a clickable button to the notification.
 
 This option can be provided O to n times to add n links.
+
+## Docker
+
+A Docker image is available: `ghcr.io/dix/teams.sh`.
+
+It can be used directly within a CI job to send notifications using a lightweight image.
+
+List of tags: [https://github.com/dix/teams.sh/pkgs/container/teams.sh](https://github.com/dix/teams.sh/pkgs/container/teams.sh "GitHub").
 
 ## Getting a webhook URL
 
