@@ -107,7 +107,7 @@ By clicking on a given workflow, you can see its execution history, turn it On/O
 
 ## Limitations
 
-In its current iteration, the script uses relies on some hard-coded settings that can't be changed through parameters and require important changes to the source code, mainly:
+In its current iteration, the script relies on some hard-coded settings that can't be modified through parameters and require important changes to the source code, mainly:
 - timezones for the notifications
 - content of the [Adaptive Card](https://adaptivecards.io/ "Microsoft")
 
